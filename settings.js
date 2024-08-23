@@ -13,9 +13,9 @@ global.owner = process.env.OWNER_NUMBER  || '917908429945' ;  // ADD YOUR NUMBER
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || 'VAJIRA-MD=6Y1SHLLD#0hZK2Abj7-On998bFnTrdiepZxZM8uAvCx7Pc5BBGBU' ,
 travaSend: process.env.TRAVA_SEND || '25' ,   
-MODERATORS : process.env.MODERATORS === undefined ? "917908429945,94787820101" : process.env.MODERATORS ,    
+MODERATORS : process.env.MODERATORS === undefined ? "917908429945" : process.env.MODERATORS ,    
 MAX_SIZE: process.env.MAX_SIZE === undefined ? '1536': process.env.MAX_SIZE,/*add this in megabytes*/    
-OWNER_NAME: process.env.OWNER_NAME || 'VAJIRA' ,
+OWNER_NAME: process.env.OWNER_NAME || 'ANKAN' ,
 COMMAND_TYPE: process.env.COMMAND_TYPE || 'button' ,
 LOGO: process.env.LOGO || `https://telegra.ph/file/ab0ea6ad90e2eb98090d9.jpg` ,
 POSTGRESQL_URL: process.env.POSTGRESQL_URL === undefined ? 'postgres://vajiratech_user:oSIFl2xmSojMZ0rkzdd0g0W6msuVTpNN@dpg-cpd7fjv109ks73e5gtig-a.frankfurt-postgres.render.com/vajiratech' : process.env.POSTGRESQL_URL,
@@ -28,8 +28,8 @@ AUTO_TYPING:  process.env.AUTO_TYPING  || false  ,
 AUTO_RECORDING:  process.env.AUTO_RECORDING  || false  ,
 AUTO_READ:  process.env.AUTO_READ  || false  ,
 AUTO_BIO:  process.env.AUTO_BIO  || false  ,       
-ALWAYS_ONLINE:  process.env.ALWAYS_ONLINE  || false  ,
-WORK_TYPE: process.env.WORK_TYPE || 'private' ,
+ALWAYS_ONLINE:  process.env.ALWAYS_ONLINE  || true  ,
+WORK_TYPE: process.env.WORK_TYPE || 'public' ,
 HEROKU_API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,    
 HEROKU_APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME,        
 INBOX_USER: process.env.INBOX_USER === undefined ? '' : process.env.INBOX_USER,
@@ -45,5 +45,6 @@ AUTO_VOICE:  process.env.AUTO_VOICE  || false  ,
 AUTO_STICKER: process.env.AUTO_STICKER || false  ,
 WELCOME:  process.env.WELCOME  || false ,
 ANTI_DELETE : process.env.ANTI_DELETE || true ,
-DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === pm ? '' : process.env.DELETEMSGSENDTO    
+DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefine? '' : process.env.DELETEMSGSENDTO    
 };
+ 
